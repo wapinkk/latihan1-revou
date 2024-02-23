@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            border: 10px ridge yellow;
+            background-color: blue;
+            align-items: center;
+        }
+
+        .container>div {
+            display: flex;
+            border: 2px solid green;
+            background-color: green;
+            color: white;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 2px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: auto;
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        main {
+            flex-direction: row;
+            display: flex;
+        }
+
+        main>div {
+
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 20px 5px;
+        }
+
+        .form {
+            justify-content: start;
+        }
+
+        .form-group {
+
+            display: flex;
+            flex: row;
+            margin: 10px 0px;
+
+        }
+
+        .form-group label {
+
+            flex: 0 0 115px;
+
+        }
+
+        .form-group span {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            margin-top: -4px;
+        }
+
+        .form-group input[type=radio] {
+
+            margin-left: 0px;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 7px;
+
+        }
+
+        .form-group input[type=text] {
+
+            flex: 1;
+            height: 30px;
+
+        }
+
+        .form-group input[type=date] {
+
+            flex: 1;
+            height: 30px;
+
+        }
+
+        .form-group #perempuan {
+            margin-left: -50px;
+        }
+
+        .form-group button {
+            width: 100%;
+            height: 30px;
+        }
+
+        hr {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        footer {
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <img src="https://tr.rbxcdn.com/61d4ba809099fcebadbe6c8dd6d67306/420/420/Hat/Png" alt="ini kucinig"
+            class="logo">
+        <div class="home">Home</div>
+        <div class="about">About</div>
+        <div class="logout">Logout</div>
+    </nav>
+
+    <header>
+        <h1>Form Belajar</h1>
+        <p>ini adalah website latihan pertama</p>
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="nama">Nama <span>:</span></label>
+                    <input type="text" name="nama" id="nama" placeholder="nama">
+                </div>
+                <div class="form-group">
+                    <label for="tgl">Tanggal Lahir <span>:</span></label>
+                    <input type="date" name="tgl" id="tgl" placeholder="Tanggal Lahir">
+                </div>
+                <div class="form-group">
+                    <label for="tgl">Jenis Kelamin <span>:</span></label>
+                    <input type="radio" name="jenis_kelamin" id="laki-laki" value="laki-laki">
+                    <label for="laki-laki">Laki-Laki</label>
+                    <input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan <span>:</span></label>
+                    <textarea name="Pesan" id="pesan" cols="60" rows="10" placeholder="Pesan"
+                        style="resize: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="form">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profile</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>Ada</td>
+                        <td>December, 10 1851</td>
+                        <td>Perempuan</td>
+                        <td>Belajar buat website</td>
+                        <td><a href=" #">klik disini</a></td>
+                        <td>delete</td>
+                    </tr>
+                    <tr>
+                        <td>Ada</td>
+                        <td>December, 10 1851</td>
+                        <td>Perempuan</td>
+                        <td>Belajar buat website</td>
+                        <td><a href=" #">klik disini</a></td>
+                        <td>delete</td>
+                    </tr>
+                    <tr>
+                        <td>Ada</td>
+                        <td>December, 10 1851</td>
+                        <td>Perempuan</td>
+                        <td>Belajar buat website</td>
+                        <td><a href=" #">klik disini</a></td>
+                        <td>delete</td>
+                    </tr>
+                    <tr>
+                        <td>Ada</td>
+                        <td>December, 10 1851</td>
+                        <td>Perempuan</td>
+                        <td>Belajar buat website</td>
+                        <td><a href=" #">klik disini</a></td>
+                        <td>delete</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        Created by rafia <sup>&copy;</sup>
+    </footer>
+</body>
+
+</html>
